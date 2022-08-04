@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<script type="text/javascript">
+    function add()
+    {
+        const a= parseInt(txtA.value);
+        const b= parseInt(txtB.value);
+        txtans.value=a+b;
+        alert(txtans.value);
+
+    }
+    function sub()
+    {
+        const a = parseInt(txt1.value);
+        const b= parseInt(txt2.value);
+        txtans1.value= a-b;
+        alert(txtans1.value);
+    
+    }
+    function multi()
+        {
+            const a= parseInt(txt3.value);
+            const b= parseInt(txt4.value);
+            txtans2.value= a*b;
+            alert(txtans2.value);
+        }
+    function div()
+    {
+        const a= parseInt(txt5.value);
+        const b= parseInt(txt6.value);
+        txtans3.value=a/b;
+        alert(txtans3.value);
+    }
+
+</script>
+<body>
+    <div>
+        enter value of A : <input type="text" width="100px" id="txtA"> <br>
+        enter value of b : <input type="text" width="100px" id="txtB"> <br>
+        add of (a and b) : <input type="text" width="100px" id="txtans" readonly> <br> <br>
+
+        <input type="button" id="btn" onclick="add()" value="sum (+)">
+    </div>
+    <br><br><br>
+    <div>
+        enter value of A : <input type="text" width="100px" id="txt1"> <br>
+        enter value of b : <input type="text" width="100px" id="txt2"> <br>
+        sub of (a and b) : <input type="text" width="100px" id="txtans1" readonly> <br> <br>
+        <input type="button" id="btn" onclick="sub()" value="substraction (-)">
+    </div>
+    <br><br><br>
+    <div>
+        enter value of A : <input type="text" width="100px" id="txt3"> <br>
+        enter value of b : <input type="text" width="100px" id="txt4"> <br>
+        multi of (a and b) : <input type="text" width="100px" id="txtans2" readonly> <br> <br>
+        <input type="button" id="btn" onclick="multi()" value="multiplication (*)">
+    </div>
+    <br><br><br>
+    <div>
+        enter value of A : <input type="text" width="100px" id="txt5"> <br>
+        enter value of b : <input type="text" width="100px" id="txt6"> <br>
+        div of (a and b) : <input type="text" width="100px" id="txtans3" readonly> <br> <br>
+        <input type="button" id="btn" onclick="div()" value="divition (/)">
+    </div>
+</body>
+</html>

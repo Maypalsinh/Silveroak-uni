@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>
+            clc
+        </title>
+    </head>
+    <script>
+
+ 
+function orangeTheme()
+       {
+        document.bgColor="orange";
+       }
+
+       function RedTheme()
+       {
+        document.bgColor="red";
+       }
+
+       function blueTheme()
+       {
+        document.bgColor="blue";
+       }
+
+
+        function add()
+       {
+        const a=parseInt(txtA.value);
+        const b=parseInt(txtB.value);
+
+        txtAns.value=a+b;
+        alert( txtAns.value);
+    
+       }
+       
+       function sub()
+       {
+        const a=parseInt(txtA.value);
+        const b=parseInt(txtB.value);
+
+        txtAns.value=a-b;
+        alert( txtAns.value);
+    
+       }
+       
+       function mul()
+       {
+        const a=parseInt(txtA.value);
+        const b=parseInt(txtB.value);
+
+        txtAns.value=a*b;
+        alert( txtAns.value);
+    
+       }
+
+       function div()
+       {
+        const a=parseInt(txtA.value);
+        const b=parseInt(txtB.value);
+
+        txtAns.value=a/b;
+        alert( txtAns.value);
+    
+       }
+      
+      
+    
+       
+       function clear1()
+       {
+        txtA.value=" ";
+        txtB.value=" ";
+        txtAns.value=" ";
+      
+       }
+
+        </script>
+
+<body>
+    <div style="text-align:center;">
+       
+      Enter value of a:  <input type="text" value="0" width=100px height=100px style="background-color:aqua ;" name="txtA" id="txtA"><br><br><hr>
+      Enter value of b: <input type="text" value="0" width=100px height=100px style="background-color:aqua ;" name="txtB" id="txtB"><br><br><hr>
+      Ans <input type="text" value="0" width=100px height=100px style="background-color:aqua ;" name="txtAns" id="txtAns" readonly><br><hr>
+      </div>
+<br>
+
+
+
+      <div style="text-align:center;">
+      <input type="button" onclick="add()"  value="+" style="background-color:aqua ;" >
+      <input type="button" onclick="sub()"  value="-" style="background-color:aqua ;" >
+      <input type="button" onclick="mul()"  value="*" style="background-color:aqua ;" >
+      <input type="button" onclick="div()"  value="/" style="background-color:aqua ;" >
+      <input type="button" onclick="clear1()"  value="C" style="background-color:aqua ;" ><hr>
+
+    </div>
+
+    <div style="text-align:center;" style="width:500px;">
+        <input type="button" onclick="orangeTheme()"; style="background-color:rgb(253, 154, 6) ;">
+        <input type="button" onclick="RedTheme()";  style="background-color:red ;">
+        <input type="button" onclick="blueTheme()";  style="background-color:rgb(20, 4, 245) ;"><hr>
+    </div>
+
+    <div style="text-align:center;">
+        <input type="button" onclick="area()"  value="A" style="background-color:aqua ;" >
+        <input type="button" onclick="clear1()"  value="C" style="background-color:aqua ;" >
+    </div>
+
+</body>
+
+</html>

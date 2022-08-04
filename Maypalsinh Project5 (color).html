@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>fadeIn demo</title>
+  <style>
+  span {
+    color: red;
+    cursor: pointer;
+  }
+  div {
+    margin: 3px;
+    width: 80px;
+    display: none;
+    height: 80px;
+    float: left;
+  }
+  #one {
+    background: rgb(9, 35, 227);
+  }
+  #two {
+    background: rgb(232, 13, 13);
+  }
+  #three {
+    background: rgba(0, 0, 255, 0.178);
+  }
+  #four{
+    background-color: rgb(79, 255, 182);
+
+  }
+  #five{
+    background-color: rgba(255, 26, 110, 0.37);
+  }
+  #six{
+    background-color: rgb(179, 239, 40);
+  }
+  #seven{
+    background-color: rgb(29, 228, 228);
+  }
+  
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<span>Click here...</span>
+<div id="one"></div>
+<div id="two"></div>
+<div id="three"></div>
+<div id="four"></div>
+<div id="five"></div>
+
+<div id="six"></div>
+<div id="seven"></div>
+
+ 
+<script>
+$( document.body ).click(function() {
+  $( "div:hidden" ).first().fadeIn( "slow" );
+});
+</script>
+ 
+</body>
+</html>

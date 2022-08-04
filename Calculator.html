@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+            clc
+        </title>
+    </head>
+    <script>
+
+        function add()
+       {
+        const a=parseInt(txtA.value);
+        const b=parseInt(txtB.value);
+
+        txtAns.value=a+b;
+        alert( txtAns.value);
+    
+       }
+       
+       function sub()
+       {
+        const a=parseInt(txtA.value);
+        const b=parseInt(txtB.value);
+
+        txtAns.value=a-b;
+        alert( txtAns.value);
+    
+       }
+       
+       function mul()
+       {
+        const a=parseInt(txtA.value);
+        const b=parseInt(txtB.value);
+
+        txtAns.value=a*b;
+        alert( txtAns.value);
+    
+       }
+
+       function div()
+       {
+        const a=parseInt(txtA.value);
+        const b=parseInt(txtB.value);
+
+        txtAns.value=a/b;
+        alert( txtAns.value);
+    
+       }
+      
+      
+    
+       
+       function clear1()
+       {
+        txtA.value=" ";
+        txtB.value=" ";
+        txtAns.value=" ";
+      
+       }
+
+        </script>
+
+<body>
+    <div style="text-align:center;">
+       
+      Enter value of a:  <input type="text" value="0" width=100px height=100px style="background-color:aqua ;" name="txtA" id="txtA"><br><br>
+      Enter value of b: <input type="text" value="0" width=100px height=100px style="background-color:aqua ;" name="txtB" id="txtB"><br><br>
+      Ans <input type="text" value="0" width=100px height=100px style="background-color:aqua ;" name="txtAns" id="txtAns" readonly><br>
+      </div>
+<br>
+      <div style="text-align:center;">
+      <input type="button" onclick="add()"  value="+" style="background-color:aqua ;" >
+      <input type="button" onclick="sub()"  value="-" style="background-color:aqua ;" >
+      <input type="button" onclick="mul()"  value="*" style="background-color:aqua ;" >
+      <input type="button" onclick="div()"  value="/" style="background-color:aqua ;" >
+      <input type="button" onclick="clear1()"  value="C" style="background-color:aqua ;" >
+
+    </div>
+
+
+</body>
+
+</html>

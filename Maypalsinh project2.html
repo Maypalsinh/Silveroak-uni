@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+        AREA
+        </title>
+    </head>
+
+
+    
+    <script>
+         function area()
+       {
+        const r=parseInt(txtR.value);
+
+        txtAns.value=2*3.14*r;
+        alert( txtAns.value);
+    
+       }
+
+            
+       function clear1()
+       {
+        txtR.value=" ";
+        txtAns.value=" ";
+      
+       }
+
+      
+    </script>
+
+    <body>
+        <div style="text-align:center;">
+           
+    Enter value of R:  <input type="text" value="0" width=100px height=100px style="background-color:aqua ;" name="txtR" id="txtR"><br><br>
+    Ans <input type="text" value="0" width=100px height=100px style="background-color:aqua ;" name="txtAns" id="txtAns" readonly><br><br>
+        </div>
+        <div style="text-align:center;">
+            <input type="button" onclick="area()"  value="A" style="background-color:aqua ;" >
+            <input type="button" onclick="clear1()"  value="C" style="background-color:aqua ;" >
+        </div>
+</body>
+</html>
